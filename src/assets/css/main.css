@@ -167,7 +167,7 @@ body{
 }
 
 
-@media screen and (min-width: 44em)and (max-width:62em){
+@media screen and (min-width: 44em)and (max-width:64em){
     .hero{
         flex-direction: column;
         align-items: center;
