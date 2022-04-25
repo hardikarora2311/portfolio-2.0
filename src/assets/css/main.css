@@ -399,14 +399,18 @@ body{
 }
 
 @media screen and (max-width: 43em){
+
+    .timeline::after{
+        left: 6%;
+    }
     .container{
-        justify-content: center;
+        justify-content: flex-start;
         /* border: 2px solid wheat; */
     }
 
     .container::after{
         top: 15%;
-        left: -7.5%;
+        left: -16%;
     }
     .content{
         /* border: 2px solid red; */
@@ -545,7 +549,7 @@ body{
     .project-text p{
         margin-left: 0;
         margin-right: 0;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
 }
