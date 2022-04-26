@@ -786,7 +786,7 @@ body{
     .card-image{
         width: 100px;
         height: 100px;
-        position: absolute;
+        position: absolute!important;
         /* z-index: 1; */
         top: -14%;
         margin: auto;
