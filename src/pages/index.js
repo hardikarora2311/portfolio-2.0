@@ -2,6 +2,8 @@ import React from "react"
 import heroGif from "../assets/images/wave-black-new.gif"
 import Timeline from "../components/Timeline"
 import Projects from "../components/Projects"
+import Namecard from "../components/Namecard"
+import { Link } from "gatsby"
 
 import Layout from "../components/Layout"
 
@@ -15,7 +17,7 @@ export default function Home() {
           <h1>I help local businesses and early startups build their online presence.</h1>
           <div className="hero-links">
               <a href="/" className="link hero-link-primary">BOOK A FREE CALL</a>
-              <a href="/" className="link hero-link-secondary">VIEW MY WORK →</a>   
+              <Link className="link hero-link-secondary">VIEW MY WORK →</Link>   
           </div>
         </div>
       </header>
@@ -39,8 +41,8 @@ export default function Home() {
         <Timeline/>
       </section>
 
-      <Projects/>
-
+      <Projects id="projects"/>
+      <Namecard/>
       
 
       

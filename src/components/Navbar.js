@@ -8,7 +8,7 @@ const Navbar = () => {
     <nav className="navbar">
         <div className="logo">PORTFOLIO</div>
         <button className='nav-btn' onClick={()=> setShow(!show)}><HiMenuAlt4/></button>
-        <div className={show? "show-nav" :"nav-menu"}>
+        <div className={show? "show-nav" :"show-nav nav-menu"}>
             <div className="center-div">
                 <ul className="non-bullet nav-list">
                     <li className="list-inline nav-items">Projects</li>
