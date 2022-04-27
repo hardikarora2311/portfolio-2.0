@@ -93,7 +93,7 @@ body{
     }
 
     .nav-menu{
-        left: -100%;
+        left: -110%;
     }
 
     .nav-btn{
@@ -179,6 +179,7 @@ body{
     text-decoration: none;
     color: #ffffff;
     margin-right: 3em;
+    cursor: pointer;
 }
 
 .hero-link-primary{
@@ -836,3 +837,107 @@ body{
     }
 }
 
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom :5em; ;
+    justify-content: center;
+    /* border: 1px solid red; */
+}
+
+#contact h3{
+    font-weight: 300;
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+#contact small{
+    font-size: 1.2em;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    margin-top: 4em;
+    width: 35%;
+}
+
+.inputs{
+    color: white;
+    border: 1px solid white;
+    padding: 0.4em 0.2em ;
+    margin: 0;
+    margin-bottom: 1.2em;
+    margin-top: 0.2em;
+    font-size: 1.5em;
+    background-color: var(--primary-colour);
+    border-radius: 0.2em;
+
+}
+
+.inputs:focus-visible{
+    outline: none;
+}
+
+.message{
+    resize: none;
+    height: 150px;
+    font-size: 1.2em;
+}
+.labels{
+    font-size: 1.3em;
+    /* font-weight: bold; */
+}
+
+.submit-btn{
+    /* background-color: var(--primary-colour); */
+    padding: 0.8em 0.7em;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: white;
+    border-radius: 1em;
+    width: 50%;
+    margin-top: 1.4em;
+    /* align-self: center; */
+    color: black;
+    border: none;
+    background-image: linear-gradient(45deg,#f3ec78, #af4261);
+}
+
+
+@media screen and (max-width: 62em) {
+
+    #contact{
+        margin-top: 5em;
+    }
+    #contact h3{
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    #contact small{
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .form{
+        /* border: 1px solid white; */
+        width: 80%;
+    }
+
+    .submit-btn{
+        width: 70%;
+        align-self: center;
+    }
+}
+
+
+@media screen and (min-width: 44em) and (max-width: 62em){
+    .submit-btn{
+        align-self: flex-start;
+        width: 40%;
+    }
+}

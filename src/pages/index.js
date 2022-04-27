@@ -3,9 +3,10 @@ import heroGif from "../assets/images/wave-black-new.gif"
 import Timeline from "../components/Timeline"
 import Projects from "../components/Projects"
 import Namecard from "../components/Namecard"
-import { Link } from "gatsby"
+import { Link } from "react-scroll"
 
 import Layout from "../components/Layout"
+import Form from "../components/Form"
 
 export default function Home() {
   return(
@@ -16,7 +17,7 @@ export default function Home() {
           <h2>HI, I AM HARDIK ARORA</h2>
           <h1>I help local businesses and early startups build their online presence.</h1>
           <div className="hero-links">
-              <a href="/" className="link hero-link-primary">BOOK A FREE CALL</a>
+             <Link className="link hero-link-primary" to="contact" spy={true} smooth={true}>GET IN TOUCH</Link>
               <Link className="link hero-link-secondary">VIEW MY WORK →</Link>   
           </div>
         </div>
@@ -41,7 +42,15 @@ export default function Home() {
         <Timeline/>
       </section>
 
-      <Projects id="projects"/>
+      
+      <div id="projects"> <Projects/></div>
+      <div id="contact">
+        <h3>Interested in working together?</h3>
+        <small>Feel free to contact me for any project or collaboration.</small>
+        <Form/>
+      </div>
+
+
       <Namecard/>
       
 
