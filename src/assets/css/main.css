@@ -47,6 +47,10 @@ body{
     padding: 0 1em;
 }
 
+.nav-link{
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 62em){
 

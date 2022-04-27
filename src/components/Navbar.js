@@ -12,8 +12,8 @@ const Navbar = () => {
         <div className={show? "show-nav" :"show-nav nav-menu"}>
             <div className="center-div">
                 <ul className="non-bullet nav-list">
-                    <li className="list-inline nav-items"><Link activeClass="active" to="projects" spy={true} smooth={true}>Projects</Link></li>
-                    <li className="list-inline nav-items"><Link activeClass="active" to="contact" spy={true} smooth={true}>Contact</Link></li>
+                    <li className="list-inline nav-items"><Link className='nav-link' to="projects" spy={true} smooth={true}>Projects</Link></li>
+                    <li className="list-inline nav-items"><Link className='nav-link' to="contact" spy={true} smooth={true}>Contact</Link></li>
                 </ul>
             </div>
             <button className='close-btn' onClick={()=> setShow(!show)}><IoMdClose/></button>
