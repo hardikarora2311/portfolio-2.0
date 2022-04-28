@@ -2,7 +2,10 @@ import React from 'react'
 
 const Form = () => {
   return (
-    <form action="" className="form">
+    <form action="https://formsubmit.co/hardikarora826@gmail.com" method="POST" className="form">
+      <input type="hidden" name="_next" value="https://hardikarora.netlify.app/thanks"></input>
+      <input type="hidden" name="_captcha" value="false"></input>
+      <input type="hidden" name="_template" value="table"></input>
         <label for="name" class="labels">Your Name</label>
         <input class="inputs" type="text" name="name" id="name" required/>
 

@@ -306,6 +306,8 @@ body{
     align-items: center;
     height: auto;
     border-radius: 1em;
+    box-shadow:  0 0 15px 0 rgb(0 0 0 / 20%)
+
 
 }
 
@@ -493,6 +495,9 @@ body{
         justify-content: flex-start;
         /* border: 2px solid wheat; */
     }
+    .timeline h3{
+        font-size: 1.8em;
+    }
 
     .container::after{
         top: 15%;
@@ -597,6 +602,14 @@ body{
     justify-content: space-between;
     margin-top: 4em;
     margin-bottom: 2em;
+}
+
+@media screen and (max-width:43em) {
+    .link-list{
+        padding: 0;
+        width: 100%;
+    }
+    
 }
 
 .project-text hr{
@@ -944,4 +957,19 @@ body{
         align-self: flex-start;
         width: 40%;
     }
+}
+
+
+.thanks{
+    margin-bottom: 6em;
+}
+
+.thanks h3{
+    background-image: linear-gradient(#f3ec78, #af4261);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-size: 2em;
+    text-align: center;
 }

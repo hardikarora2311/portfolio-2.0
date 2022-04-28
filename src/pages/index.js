@@ -4,7 +4,6 @@ import Timeline from "../components/Timeline"
 import Projects from "../components/Projects"
 import Namecard from "../components/Namecard"
 import { Link } from "react-scroll"
-
 import Layout from "../components/Layout"
 import Form from "../components/Form"
 
@@ -51,8 +50,7 @@ export default function Home() {
       </div>
 
 
-      <Namecard/>
-      
+      <Namecard/>      
 
       
     </Layout>
