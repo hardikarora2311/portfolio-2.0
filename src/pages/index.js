@@ -6,10 +6,35 @@ import Namecard from "../components/Namecard"
 import { Link } from "react-scroll"
 import Layout from "../components/Layout"
 import Form from "../components/Form"
+import SEO from "../components/SEO"
+import { useStaticQuery, graphql } from "gatsby"
+import { Link as Link1 } from "gatsby"
+
+const query = graphql`
+  {
+    allContentfulProject(sort: {fields: title, order: DESC}) {
+      nodes {
+        title
+        description {
+          description
+        }
+        github
+        live
+        featured
+        image {
+          gatsbyImageData(placeholder: TRACED_SVG)
+        }
+      }
+    }
+  }
+`
 
 export default function Home() {
+  const data= useStaticQuery(query)
+  const projects= data.allContentfulProject.nodes
   return(
     <Layout>
+      <SEO/>
       <header className="hero">
         <img src= {heroGif} className="hero-img" alt="wave gif"/>
         <div className="hero-text">
@@ -17,7 +42,7 @@ export default function Home() {
           <h1>I help local businesses and early startups build their online presence.</h1>
           <div className="hero-links">
              <Link className="link hero-link-primary" to="contact" spy={true} smooth={true}>GET IN TOUCH</Link>
-              <Link className="link hero-link-secondary">VIEW MY WORK →</Link>   
+              <Link1 className="link hero-link-secondary" to="/project">VIEW MY WORK →</Link1>   
           </div>
         </div>
       </header>
@@ -42,7 +67,7 @@ export default function Home() {
       </section>
 
       
-      <div id="projects"> <Projects/></div>
+      <div id="projects"> <Projects projects={projects}/></div>
       <div id="contact">
         <h3>Interested in working together?</h3>
         <small>Feel free to contact me for any project or collaboration.</small>

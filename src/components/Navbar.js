@@ -2,12 +2,14 @@ import React,{useState} from 'react'
 import {HiMenuAlt4} from "react-icons/hi"
 import {IoMdClose} from "react-icons/io"
 import { Link } from 'react-scroll'
+import { Link as Link1 } from "gatsby"
+
 
 const Navbar = () => {
   const [show, setShow]= useState(false)
   return (
     <nav className="navbar">
-        <Link to='/' className="logo nav-link">PORTFOLIO</Link>
+        <Link1 to='/' className="logo nav-link">PORTFOLIO</Link1>
         <button className='nav-btn' onClick={()=> setShow(!show)}><HiMenuAlt4/></button>
         <div className={show? "show-nav" :"show-nav nav-menu"}>
             <div className="center-div">

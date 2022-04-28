@@ -1,32 +1,11 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 import { GatsbyImage,getImage } from 'gatsby-plugin-image'
 import {BsGithub} from "react-icons/bs"
+import { Link as Link1 } from "gatsby"
 
-const query = graphql`
-  {
-    allContentfulProject(sort: {fields: title, order: DESC}) {
-      nodes {
-        title
-        description {
-          description
-        }
-        github
-        live
-        featured
-        image {
-          gatsbyImageData(placeholder: TRACED_SVG)
-        }
-      }
-    }
-  }
-`
 
-const Projects = () => {
 
-    const data= useStaticQuery(query)
-    const projects= data.allContentfulProject.nodes
-    console.log(projects)
+const Projects = ({projects=[]}) => {
   return (
     <section className="project-section">
         <h3>EXPERIENCE</h3>
@@ -50,7 +29,6 @@ const Projects = () => {
              </div> 
         })}
         </div>
-
     </section>
   )
 }
