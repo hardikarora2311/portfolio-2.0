@@ -22,8 +22,8 @@ const Projects = ({projects=[]}) => {
                  <h2>{title}</h2>
                  <p>{description}</p>
                  <ul className="link-list">
-                     <li><a href= {github} class="project-link project-link-primary">Github <BsGithub/></a></li>
-                      <li><a href= {live} class="project-link project-link-secondary">Live Demo →</a></li>
+                     <li><a target="_blank" href= {github} class="project-link project-link-primary">Github <BsGithub/></a></li>
+                      <li><a target="_blank" href= {live} class="project-link project-link-secondary">Live Demo →</a></li>
                  </ul>
                  <hr></hr>
              </div> 
