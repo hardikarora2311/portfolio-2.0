@@ -5,7 +5,7 @@ import Projects from "../components/Projects"
 import Namecard from "../components/Namecard"
 import { Link } from "react-scroll"
 import Layout from "../components/Layout"
-import Form from "../components/Form"
+// import Form from "../components/Form"
 import SEO from "../components/SEO"
 import { useStaticQuery, graphql } from "gatsby"
 import { Link as Link1 } from "gatsby"
@@ -71,7 +71,6 @@ export default function Home() {
       <div id="contact">
         <h3>Interested in working together?</h3>
         <small>Feel free to contact me for any project or collaboration.</small>
-        <Form/>
       </div>
 
 
