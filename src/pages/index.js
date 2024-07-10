@@ -12,7 +12,7 @@ import { Link as Link1 } from "gatsby"
 
 const query = graphql`
   {
-    allContentfulProject(sort: {fields: title, order: DESC}) {
+    allContentfulProject(sort: {fields: title, order: ASC}) {
       nodes {
         title
         description {
