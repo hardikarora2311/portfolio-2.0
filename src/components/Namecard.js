@@ -8,7 +8,7 @@ const Namecard = () => {
   return (
     <div className="card">
         <div className="card-content">
-            <StaticImage src="../assets/images/me.png" className='card-image'
+            <StaticImage src="../assets/images/me.jpeg" className='card-image'
             placeholder='blurred' alt='Hardik' layout='fullWidth'/>
             <div className="info">
                 <div className="name">
