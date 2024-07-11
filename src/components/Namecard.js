@@ -13,7 +13,7 @@ const Namecard = () => {
             <div className="info">
                 <div className="name">
                     <h4>Hardik Arora</h4>
-                    <small>Freelance front-end developer</small>
+                    <small>Generative AI Full Stack Developer</small>
                 </div>
                 <div className="contact-info">
                     <div className='mail'><MdEmail className='mail-icon'/>hardikarora826@gmail.com</div>
