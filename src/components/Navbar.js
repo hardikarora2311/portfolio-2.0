@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className={show? "show-nav" :"show-nav nav-menu"}>
             <div className="center-div">
                 <ul className="non-bullet nav-list">
-                    <li className="list-inline nav-items"><Link className='nav-link' to="/project" spy={true} smooth={true}>Projects</Link></li>
+                    <li className="list-inline nav-items"><Link className='nav-link' to="/project/" spy={true} smooth={true}>Projects</Link></li>
                     <li className="list-inline nav-items"><Link className='nav-link' to="contact" spy={true} smooth={true}>Contact</Link></li>
                 </ul>
             </div>
